@@ -1,0 +1,100 @@
+@import "../../styles/base.scss";
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-content {
+  display: flex;
+  margin-left: 2rem;
+  background-color: $white;
+  margin-top: 150px;
+}
+.call-control {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.user-label {
+  width: 100%;
+  padding-right: 2rem;
+  margin-bottom: 0.75rem;
+  font-size: 14px;
+  color: $darkGray;
+  font-family: $code;
+}
+.user-peerid {
+  width: 100%;
+  padding-right: 2rem;
+  margin-bottom: 0.75rem;
+  font-size: 14px;
+  color: $darkGray;
+  font-family: $code;
+}
+.recipient-label {
+  width: 100%;
+  padding-right: 2rem;
+  margin-bottom: 0.75rem;
+  margin-top: 2rem;
+  font-size: 14px;
+  color: $darkGray;
+  font-family: $code;
+}
+.recipient-input {
+  background-color: $lighterGray;
+  border: 1px solid $lighterGray;
+  border-radius: 4px;
+  height: 40px;
+  width: 100%;
+  line-height: 1.5em;
+  outline: 0;
+  transition: all 0.25s ease 0s;
+  font-size: 16px;
+  padding: 0 1rem;
+
+  &:hover {
+    border-color: $gray;
+    transition: all 0.25s ease 0s;
+  }
+
+  &:focus {
+    border-color: $primaryBlue;
+    transition: all 0.25s ease 0s;
+  }
+}
+
+.call-button {
+  height: 40px;
+  margin-top: 1rem;
+  color: #ffffff;
+  background-color: $green;
+  border-color: $green;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 16px;
+  font-family: $code;
+  transition: all 0.25s ease 0s;
+
+  &:hover {
+    background-color: $green;
+    border-color: $green;
+    transform: translateY(-2.5px);
+    cursor: pointer;
+    transition: all 0.25s ease 0s;
+  }
+}
+.video-container {
+  display: flex;
+}
+.video-call {
+  flex: 1 1 auto;
+  margin: 5px;
+  max-width: 400px;
+  max-height: 400px;
+}
+.video-self {
+  flex: 1 1 auto;
+  max-width: 400px;
+  max-height: 400px;
+}
